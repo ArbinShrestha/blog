@@ -2,6 +2,7 @@
 
 
 @section('content')
+
     <div class="card">
         <div class="card-body">
             <table class="table table-hover">
@@ -23,6 +24,7 @@
                             {{$category->name}}
                         </td>
                         <td>
+
                             <a href="{{route('category.edit', ['id'=>$category->id])}}" class="btn btn-xs btn-info">
                                 Edit
                             </a>

@@ -7,7 +7,7 @@
 
     <div class="card">
         <div class="card-header">
-            Update category:{{ $category->name }}
+            Update category {{ $category->name }}
 
         </div>
 

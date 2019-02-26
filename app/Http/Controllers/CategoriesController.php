@@ -72,6 +72,7 @@ class CategoriesController extends Controller
      */
     public function edit($id)
     {
+
         $category = Category::find($id);
 
         return view('admin.categories.edit')->with('category', $category);
@@ -97,6 +98,7 @@ class CategoriesController extends Controller
 
         Session::flash('success', 'you successfully updated the category');
 
+
         return redirect()->route('categories');
 
     }
@@ -115,7 +117,8 @@ class CategoriesController extends Controller
 
         Session::flash('success', 'you successfully deleted the category');
 
-        return redirect()->route('categories');
+
+        return redirect()->back();
 
 
     }
